@@ -13,6 +13,7 @@ h1, h2, h3, h4, h5{
   width: 90%;
   margin: 0 auto;
   background: rgba(152, 160, 255, 0.87);
+  
 
 }
 
@@ -43,13 +44,13 @@ textarea{
   margin-top: 0.5em;
   padding: 0.5em 0;
   border-radius: 5px;
-  width: 100%;
+
 }
 input:focus,
 
 select:focus,
 textarea:focus{
-  transition-delay: 2s;
+  transition-delay: 1s;
   transition-timing-function: steps(6, end);
   background: #e3ffff;
 }
@@ -62,17 +63,20 @@ fieldset{
 }
 legend{
   font-family: 'Open Sans', sans-serif;
+  font-size: 1.3em;
   padding: 1em 0;
 }
 
 hr{
   border-color: #000;
 }
-.container,
-.first-sec,
-.my-info{
+.container
+/* .first-sec, */
+/* .my-info */
+{
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 ::placeholder{
   text-align: right;
@@ -89,9 +93,18 @@ button[type="submit"] {
   padding: 1em 0;
   background: #50ff23;
 }
+.post-code-sec{
+  display: flex;
+  flex-direction: column;
+}
+.flex-div{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
 #post-code{
   width: 50%
-
 }
 .btn-submit{
   margin: 1em 0 0;
@@ -106,4 +119,25 @@ button[type="submit"] {
   margin-top:  1.5em;
   background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
 
+}
+@media (min-width: 768px) {
+  .container{
+    width: 70%;
+    margin: 0 auto;
+
+  }
+
+  .flex-div{
+    flex-direction: row;
+  }
+  /* input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea{
+    flex-grow: 2;
+  }
+  .lb{
+    flex-grow: 2;
+  } */
 }
