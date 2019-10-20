@@ -131,15 +131,10 @@ button[type="submit"] {
   .container{
     max-width: 800px;
   }
-  .container{
-    display: flex;
-    flex-direction: row;
-  }
+
   .flex-div,
   .post-code-sec{
-    display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
   }
@@ -147,13 +142,15 @@ button[type="submit"] {
     width: 100%;
   }
 
-  .flex-grow{
-    flex-basis: 60%;
+  .my-info input,
+  .my-info select{
+    width: 75%;
   }
   #post-code{
     /* margin-right: 52px; */
-    justify-content: flex-start;
+
   }
+
   .textarea textarea{
     width: 100%
   }
