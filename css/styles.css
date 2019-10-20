@@ -105,6 +105,8 @@ button[type="submit"] {
 }
 .textarea{
   margin-top: 1em;
+  display: flex;
+  flex-direction: column;
 }
 .textarea textarea{
   width: 250px;
