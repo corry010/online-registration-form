@@ -13,7 +13,6 @@ h1, h2, h3, h4, h5{
   width: 90%;
   margin: 0 auto;
   background: rgba(152, 160, 255, 0.87);
-  
 
 }
 
@@ -70,10 +69,8 @@ legend{
 hr{
   border-color: #000;
 }
-.container
-/* .first-sec, */
-/* .my-info */
-{
+
+.container{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -106,6 +103,12 @@ button[type="submit"] {
 #post-code{
   width: 50%
 }
+.textarea{
+  margin-top: 1em;
+}
+.textarea textarea{
+  width: 250px;
+}
 .btn-submit{
   margin: 1em 0 0;
 }
@@ -124,20 +127,35 @@ button[type="submit"] {
   .container{
     width: 70%;
     margin: 0 auto;
-
   }
-
-  .flex-div{
+  .container{
+    max-width: 800px;
+  }
+  .container{
+    display: flex;
     flex-direction: row;
   }
-  /* input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  select,
-  textarea{
-    flex-grow: 2;
+  .flex-div,
+  .post-code-sec{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
   }
-  .lb{
-    flex-grow: 2;
-  } */
+  .form-content{
+    width: 100%;
+  }
+
+  .flex-grow{
+    flex-basis: 60%;
+  }
+  #post-code{
+    /* margin-right: 52px; */
+    justify-content: flex-start;
+  }
+  .textarea textarea{
+    width: 100%
+  }
+
 }
